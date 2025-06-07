@@ -1,0 +1,1 @@
+<?php session_start(); include 'db.php'; $student_id=$_SESSION['student_id']; $project_id=$_POST['project_id']; $stmt=$pdo->prepare('INSERT INTO student_project_wishlist (student_id, project_id) VALUES (?, ?)'); $stmt->execute([$student_id, $project_id]); echo 'Wishlist soumise'; ?>

@@ -1,0 +1,1 @@
+<?php include 'db.php'; $stmt=$pdo->prepare('INSERT INTO projects (title, description) VALUES (?, ?)'); $stmt->execute([$_POST['title'], $_POST['description']]); echo 'Projet ajouté'; ?>

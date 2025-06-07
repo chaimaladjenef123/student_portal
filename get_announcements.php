@@ -1,0 +1,1 @@
+<?php include 'db.php'; $stmt=$pdo->prepare('SELECT * FROM announcements WHERE display=?'); $stmt->execute([$dept]); while($a=$stmt->fetch()){ echo "<h3>{$a['title']}</h3><p>{$a['content']}</p>"; } ?>

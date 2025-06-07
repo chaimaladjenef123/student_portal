@@ -1,0 +1,1 @@
+<?php session_start(); include 'db.php'; $stmt=$pdo->prepare('SELECT * FROM students WHERE email=?'); $stmt->execute([$_POST['email']]); $student=$stmt->fetch(); if($student && $_POST['password']===$student['password']){ $_SESSION['student_id']=$student['id']; header('Location: ../student_dashboard.php'); } else { echo 'Erreur'; } ?>

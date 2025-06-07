@@ -1,0 +1,1 @@
+<?php include 'db.php'; $stmt=$pdo->prepare('INSERT INTO announcements (title, content, display, datetime) VALUES (?, ?, ?, NOW())'); $stmt->execute([$_POST['title'], $_POST['content'], $_POST['display']]); header('Location: ../admin_dashboard.php'); ?>

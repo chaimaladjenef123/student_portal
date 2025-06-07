@@ -1,0 +1,1 @@
+<?php include 'db.php'; $stmt=$pdo->query('SELECT * FROM students'); while($s=$stmt->fetch()){ echo "<div>{$s['first_name']} {$s['last_name']}</div>"; } ?>

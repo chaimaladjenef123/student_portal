@@ -1,0 +1,1 @@
+<?php $dept = 'computer_science'; include 'backend/get_announcements.php'; ?>

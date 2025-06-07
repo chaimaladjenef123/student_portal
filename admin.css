@@ -1,0 +1,65 @@
+body {
+    background: #f2f8fb;
+}
+
+.container {
+    background: #eef2f7;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+h1, h3 {
+    color: #2c3e50;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.nav-tabs .nav-link {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-info {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+.alert {
+    font-size: 0.95rem;
+}
+
+
+
+/* Bouton flottant circulaire en bas à droite */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        .floating-btn:hover {
+            background-color: #0b5ed7;
+        }

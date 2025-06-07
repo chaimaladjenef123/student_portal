@@ -1,0 +1,1 @@
+<?php include 'db.php'; $id=$_GET['id']; $stmt=$pdo->prepare('SELECT * FROM students WHERE id=?'); $stmt->execute([$id]); $s=$stmt->fetch(); echo "Nom: {$s['first_name']} {$s['last_name']}"; ?>
